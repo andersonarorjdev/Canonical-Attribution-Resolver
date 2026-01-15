@@ -1,11 +1,10 @@
 # Canonical Attribution Resolver
 
-A minimal, non-confidential code sample that demonstrates how I design deterministic, template-style attribution logic (similar to a GTM Variable Template mindset), inspired by real-world enterprise tracking scenarios.
-
-This repository is intentionally small and self-contained: pure functions only (no DOM access, no storage), explicit inputs/outputs, and predictable resolution rules.
+A minimal code sample that demonstrates how I design and develop an template-style attribution logic (similar to a GTM Variable Templates), inspired by real-world enterprise tracking scenarios that i already found.
+This repository is intentionally small and self-contained: pure functions only (no external access like endpoints, URLS or external objects), explicit inputs/outputs, and predictable resolution rules.
+This example is inspired by attribution logic originally implemented in client-side GTM tags for specific business use cases, later reconstructed here as a generic, reusable, template-style module.
 
 ## What problem does this solve?
-
 In real tracking implementations, attribution signals can be inconsistent or conflicting across:
 - Click IDs (e.g., `gclid`, `gbraid`, `wbraid`)
 - UTM parameters (`utm_*`)
